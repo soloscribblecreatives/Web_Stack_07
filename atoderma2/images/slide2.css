@@ -3,6 +3,37 @@
 	padding: 0px;
 }
 
+.blip {
+  position: absolute;
+  left: 923px;
+  top: 663px;
+  width: 52px;
+  height: 40px;
+	animation: flashLongOn 1s infinite;
+	animation-delay: 3.5s;
+	animation-fill-mode: both;
+	z-index: 30;
+}
+
+.pop {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1080px;
+	height: 810px;
+	display: none;
+	z-index: 120;
+}
+
+.popUp {
+  position: absolute;
+  left: 545px;
+  top: 225px;
+  width: 508px;
+  height: 489px;
+  z-index: 100;
+}
+
 .spot0 {
 	position: absolute;
   left: 0px;
@@ -253,7 +284,7 @@
 }
 
 
-@keyframes flashLong {
+@keyframes flashLongOn {
   0%,  100% {
     opacity: 0;
   }

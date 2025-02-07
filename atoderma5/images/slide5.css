@@ -3,12 +3,43 @@
 	padding: 0px;
 }
 
+.blip {
+  position: absolute;
+  left: 436px;
+  top: 549px;
+  width: 52px;
+  height: 40px;
+	animation: flashLongOn 1s infinite;
+	animation-delay: 4s;
+	animation-fill-mode: both;
+	z-index: 30;
+}
+
+.pop {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1080px;
+	height: 810px;
+	display: none;
+	z-index: 120;
+}
+
+.popUp {
+  position: absolute;
+  left: 19px;
+  top: 311px;
+  width: 478px;
+  height: 288px;
+  z-index: 100;
+}
+
 .home {
 	position: absolute;
-  left: 998px;
-  top: 51px;
-  width: 75px;
-  height: 70px;
+  left: 925px;
+  top: 35px;
+  width: 155px;
+  height: 96px;
 	z-index: 35;
 }
 
@@ -274,17 +305,15 @@
   }
 }
 
-
 @keyframes flashLongOn {
-  0%, 40%, 80% {
+  0%,  100% {
     opacity: 0;
   }
 
-  20%, 60%, 100% {
+  25%, 50%, 75% {
     opacity: 1;
   }
 }
-
 
 @-webkit-keyframes fadeInDownSmall {
   0% {

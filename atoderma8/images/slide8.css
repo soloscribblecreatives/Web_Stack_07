@@ -3,12 +3,64 @@
 	padding: 0px;
 }
 
+.blip1 {
+  position: absolute;
+  left: 486px;
+  top: 574px;
+  width: 52px;
+  height: 40px;
+	animation: flashLongOn 1s infinite;
+	animation-delay: 3.5s;
+	animation-fill-mode: both;
+	z-index: 30;
+}
+
+.blip2 {
+  position: absolute;
+  left: 969px;
+  top: 427px;
+  width: 52px;
+  height: 40px;
+	animation: flashLongOn 1s infinite;
+	animation-delay: 3.5s;
+	animation-fill-mode: both;
+	z-index: 30;
+}
+
+.pop1, .pop2 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1080px;
+	height: 810px;
+	display: none;
+	z-index: 120;
+}
+
+.popUp1 {
+  position: absolute;
+  left: 43px;
+  top: 249px;
+  width: 518px;
+  height: 400px;
+  z-index: 100;
+}
+
+.popUp2 {
+  position: absolute;
+  left: 573px;
+  top: 249px;
+  width: 465px;
+  height: 466px;
+  z-index: 100;
+}
+
 .home {
 	position: absolute;
-  left: 998px;
-  top: 51px;
-  width: 75px;
-  height: 70px;
+  left: 925px;
+  top: 35px;
+  width: 155px;
+  height: 96px;
 	z-index: 35;
 }
 
@@ -264,7 +316,7 @@
 }
 
 
-@keyframes flashLong {
+@keyframes flashLongOn {
   0%,  100% {
     opacity: 0;
   }
